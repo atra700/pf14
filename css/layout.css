@@ -1,0 +1,100 @@
+:root {
+    --primary-color: #f4b134;
+    --background-color: #f3efe7;
+    --text-color: #202124;
+    --w-color: #ffffff;
+    --b-color: #4f4f4f;
+
+}
+
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    overflow: hidden;
+}
+
+body {
+    color: var(--text-color);
+}
+
+.inner {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.default {
+    padding: 80px 0;
+}
+
+.default .title {
+    max-width: 1170px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+}
+
+.default .title h2 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.default .title p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 16px;
+}
+
+.btn_default {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 8px 24px;
+    color: var(--w-color);
+    border-radius: 8px;
+    overflow: hidden;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width:768px) {
+    .inner {
+        max-width: 1170px;
+        margin: 0 auto;
+
+        /* r */
+        margin: 0 8px;
+
+    }
+
+    .default {
+        padding: 80px 0;
+
+        /* r */
+        margin: 0 8px;
+    }
+
+    .default .title {
+        max-width: 1170px;
+        margin: 0 auto;
+        margin-bottom: 32px;
+
+        /* r */
+        margin: 0 8px;
+
+    }
+
+    .default .title h2 {
+        font-size: 32px;
+        font-weight: 600;
+    }
+
+    .default .title .desc {
+        display: block;
+        margin-top: 16px;
+        line-height: 24px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
